@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Cliente - Nani Delivery</title>
+    <link rel="stylesheet" href="css/dashboard-cliente.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <img src="multimedia/img/logo.png" alt="Logo" class="logo">
+
+            <div class="nav-buttons">
+                <a href="index.html" class="btn-full">Inicio</a>
+                <a href="seguimiento.html" class="btn-full">Seguimiento</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <section class="dashboard">
+
+        <h1>Bienvenido al Panel del Cliente</h1>
+        <p>Realiza tu pedido y obtén tu código de seguimiento al instante.</p>
+
+        <!-- FORMULARIO DE PEDIDO -->
+        <div class="pedido-card">
+
+            <h2>Crear Nuevo Pedido</h2>
+
+            <form class="pedido-form">
+
+                <div class="input-group">
+                    <label for="Cliente">Nombre Completo</label>
+                    <input type="text" id="Cliente" placeholder="Nombre y Apellido">
+                </div>
+                
+                <div class="input-group">
+                    <label for="origen">Lugar de Origen</label>
+                    <input type="text" id="origen" placeholder="Ejemplo: Calle Lima 123">
+                </div>
+
+                <div class="input-group">
+                    <label for="destino">Lugar de Destino</label>
+                    <input type="text" id="destino" placeholder="Ejemplo: Av. Arequipa 567">
+                </div>
+
+                <div class="input-group">
+                    <label for="tipo">Tipo de Envío</label>
+                    <select id="tipo">
+                        <option value="" disabled selected>Seleccione</option>
+                        <option value="express">Express (1 hora)</option>
+                        <option value="same-day">Mismo Día</option>
+                        <option value="programado">Programado</option>
+                    </select>
+                </div>
+
+                <button type="button" class="btn-full btn-large" onclick="generarCodigo()">Generar Pedido</button>
+
+            </form>
+
+            <!-- RESULTADO -->
+            <div id="codigo-box" class="codigo-box hidden">
+                <h3>Código Generado</h3>
+                <p id="codigo-generado"></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        © 2025 Nani Delivery — <a href="#">Términos y Condiciones</a>
+    </footer>
+    <script src="js/dashboard-cliente.js"></script>
+
+</body>
+</html>

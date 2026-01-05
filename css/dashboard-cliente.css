@@ -1,0 +1,156 @@
+/* TIPOGRAFÍA & VARIABLES */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --emerald: #0FAD83;
+    --emerald-dark: #0A5A41;
+    --gray-light: #D9DFE6;
+    --carbon: #2B2D31;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: var(--white);
+    color: var(--carbon);
+    line-height: 1.6;
+}
+
+/* NAV */
+.navbar {
+    width: 100%;
+    background: var(--emerald-dark);
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-full {
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: var(--emerald);
+    color: var(--white);
+    font-weight: 500;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.btn-full:hover {
+    background: var(--white);
+    color: var(--emerald-dark);
+}
+
+.btn-large {
+    width: 100%;
+    padding: 12px;
+}
+
+/* DASHBOARD */
+.dashboard {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.dashboard h1 {
+    font-size: 40px;
+    color: var(--emerald-dark);
+}
+
+.dashboard p {
+    color: #4A4A4A;
+    margin-bottom: 30px;
+}
+
+/* TARJETA DE PEDIDO */
+.pedido-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--gray-light);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+    max-width: 600px;
+}
+
+.pedido-card h2 {
+    font-size: 28px;
+    color: var(--emerald-dark);
+    margin-bottom: 20px;
+}
+
+.pedido-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--gray-light);
+    border-radius: 8px;
+    transition: .2s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: var(--emerald);
+    box-shadow: 0 0 0 3px rgba(15,173,131,0.15);
+    outline: none;
+}
+
+/* CÓDIGO GENERADO */
+.codigo-box {
+    margin-top: 25px;
+    background: var(--emerald);
+    color: var(--white);
+    padding: 18px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.codigo-box.hidden {
+    display: none;
+}
+
+/* FOOTER */
+.footer {
+    background: var(--emerald-dark);
+    color: var(--white);
+    padding: 22px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer a {
+    color: var(--white);
+    text-decoration: underline;
+}

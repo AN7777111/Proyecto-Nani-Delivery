@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos - Admin</title>
+    <link rel="stylesheet" href="css/pedidos.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="multimedia/img/logo.png" class="logo" alt="Logo">
+            <h3>Admin Panel</h3>
+        </div>
+
+        <nav class="menu">
+            <a href="dashboard-admin.html">Inicio</a>
+            <a href="perfil-admin.html">Perfil</a>
+            <a href="clientes.html">Clientes</a>
+            <a class="active" href="pedidos.html">Pedidos</a>
+            <a href="pagos.html">Pagos</a>
+            <a href="seguimiento-admin.html">Seguimiento</a>
+            <a href="login-admin.html" class="logout">Cerrar sesión</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+        <h1>Gestión de Pedidos</h1>
+        <p class="subtitle">Control total de órdenes registradas.</p>
+
+        <div class="actions">
+            <input type="text" placeholder="Buscar por cliente, código o lugar…">
+            <select>
+                <option value="">Todos los estados</option>
+                <option value="pendiente">Pendiente</option>
+                <option value="en_camino">En camino</option>
+                <option value="entregado">Entregado</option>
+            </select>
+            <button class="btn-add">+ Nuevo Pedido</button>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Cliente</th>
+                        <th>Origen</th>
+                        <th>Destino</th>
+                        <th>Fecha</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>#PED123</td>
+                        <td>Juan Pérez</td>
+                        <td>Cayma</td>
+                        <td>Miraflores</td>
+                        <td>28/11/2025</td>
+                        <td><span class="badge pendiente">Pendiente</span></td>
+                        <td><button class="btn-small">Ver</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>#PED124</td>
+                        <td>Ana López</td>
+                        <td>Cerro Colorado</td>
+                        <td>Paucarpata</td>
+                        <td>28/11/2025</td>
+                        <td><span class="badge camino">En camino</span></td>
+                        <td><button class="btn-small">Ver</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>#PED125</td>
+                        <td>Pedro García</td>
+                        <td>Yanahuara</td>
+                        <td>JLByR</td>
+                        <td>27/11/2025</td>
+                        <td><span class="badge ok">Entregado</span></td>
+                        <td><button class="btn-small">Ver</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+    <script src="js/pedidos.js"></script>
+
+</body>
+</html>

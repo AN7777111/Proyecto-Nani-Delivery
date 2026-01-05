@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin</title>
+    <link rel="stylesheet" href="css/dashboard-admin.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="multimedia/img/logo.png" class="logo" alt="Logo">
+            <h3>Admin Panel</h3>
+        </div>
+
+        <nav class="menu">
+            <a href="dashboard-admin.html" class="active">Inicio</a>
+            <a href="perfil-admin.html">Perfil</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="pagos.html">Pagos</a>
+            <a href="seguimiento-admin.html">Seguimiento</a>
+            <a href="login-admin.html" class="logout">Cerrar sesión</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+        <h1>Bienvenido, Admin</h1>
+        <p class="subtitle">Panel general de control y operaciones.</p>
+
+        <div class="cards-grid">
+            <div class="card">
+                <h2>Pedidos</h2>
+                <p>Gestiona pedidos de clientes.</p>
+                <a href="pedidos.html" class="btn">Ir →</a>
+            </div>
+
+            <div class="card">
+                <h2>Clientes</h2>
+                <p>Consulta información de clientes.</p>
+                <a href="clientes.html" class="btn">Ir →</a>
+            </div>
+
+            <div class="card">
+                <h2>Pagos</h2>
+                <p>Información de cobros y facturación.</p>
+                <a href="pagos.html" class="btn">Ir →</a>
+            </div>
+
+            <div class="card">
+                <h2>Seguimiento</h2>
+                <p>Actualiza códigos y estado de paquetes.</p>
+                <a href="seguimiento-admin.html" class="btn">Ir →</a>
+            </div>
+        </div>
+    </main>
+    <script src="js/dashboard-admin.js"></script>
+
+</body>
+</html>

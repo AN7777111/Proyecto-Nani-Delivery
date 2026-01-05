@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento de Pedidos - Admin</title>
+    <link rel="stylesheet" href="css/seguimiento-admin.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="multimedia/img/logo.png" class="logo" alt="Logo">
+            <h3>Admin Panel</h3>
+        </div>
+
+        <nav class="menu">
+            <a href="dashboard-admin.html">Inicio</a>
+            <a href="perfil-admin.html">Perfil</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="pagos.html">Pagos</a>
+            <a class="active" href="seguimiento-admin.html">Seguimiento</a>
+            <a href="login-admin.html" class="logout">Cerrar sesión</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <h1>Gestión de Seguimiento</h1>
+        <p class="subtitle">Actualiza códigos de seguimiento, estados y ubicación de los pedidos.</p>
+
+        <!-- FORMULARIO -->
+        <section class="form-card">
+            <h2>Actualizar seguimiento</h2>
+
+            <form>
+                <div class="field">
+                    <label>ID Pedido</label>
+                    <input type="text" placeholder="Ej: PED001" required>
+                </div>
+
+                <div class="field">
+                    <label>Código de seguimiento</label>
+                    <input type="text" placeholder="Ej: TRK-998877" required>
+                </div>
+
+                <div class="field">
+                    <label>Estado</label>
+                    <select required>
+                        <option value="">Seleccionar estado</option>
+                        <option value="recibido">Recibido</option>
+                        <option value="en-proceso">En proceso</option>
+                        <option value="en-ruta">En ruta</option>
+                        <option value="entregado">Entregado</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>Ubicación actual</label>
+                    <input type="text" placeholder="Ej: Lima - Centro de distribución">
+                </div>
+
+                <button class="btn">Actualizar</button>
+            </form>
+        </section>
+
+        <!-- TABLA -->
+        <div class="table-container">
+            <h2>Historial de Seguimiento</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID Pedido</th>
+                        <th>Cliente</th>
+                        <th>Código</th>
+                        <th>Estado</th>
+                        <th>Ubicación</th>
+                        <th>Última actualización</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>PED001</td>
+                        <td>Juan Pérez</td>
+                        <td>TRK-789456</td>
+                        <td><span class="badge en-ruta">En ruta</span></td>
+                        <td>Arequipa</td>
+                        <td>28/11/2025</td>
+                    </tr>
+
+                    <tr>
+                        <td>PED002</td>
+                        <td>Ana López</td>
+                        <td>TRK-112233</td>
+                        <td><span class="badge entregado">Entregado</span></td>
+                        <td>Lima</td>
+                        <td>27/11/2025</td>
+                    </tr>
+
+                    <tr>
+                        <td>PED003</td>
+                        <td>Pedro García</td>
+                        <td>TRK-445566</td>
+                        <td><span class="badge en-proceso">En proceso</span></td>
+                        <td>Centro logístico</td>
+                        <td>27/11/2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+    <script src="js/seguimiento-admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --emerald: #0FAD83;
+    --emerald-dark: #0A5A41;
+    --gray-light: #D9DFE6;
+    --carbon: #2B2D31;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    background: var(--gray-light);
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    background: var(--emerald-dark);
+    color: var(--white);
+    height: 100vh;
+    padding: 25px 20px;
+    position: fixed;
+    box-shadow: 4px 0 12px rgba(0,0,0,0.15);
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 14px;
+    margin-bottom: 8px;
+    color: var(--white);
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    background: var(--emerald);
+}
+
+.menu a.active {
+    background: var(--emerald);
+}
+
+.menu a.logout {
+    background: #c62828;
+}
+
+.menu a.logout:hover {
+    background: #8e1c1c;
+}
+
+/* MAIN CONTENT */
+.main {
+    margin-left: 260px;
+    width: calc(100% - 260px);
+    padding: 40px;
+}
+
+.main h1 {
+    color: var(--emerald-dark);
+    font-size: 34px;
+}
+
+.subtitle {
+    color: #444;
+    margin-bottom: 25px;
+}
+
+/* CARDS */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid var(--gray-light);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    transition: 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.card h2 {
+    color: var(--emerald-dark);
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: var(--emerald);
+    color: var(--white);
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: var(--emerald-dark);
+}
+

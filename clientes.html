@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes - Admin</title>
+    <link rel="stylesheet" href="css/clientes.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="multimedia/img/logo.png" class="logo" alt="Logo">
+            <h3>Admin Panel</h3>
+        </div>
+
+        <nav class="menu">
+            <a href="dashboard-admin.html">Inicio</a>
+            <a href="perfil-admin.html">Perfil</a>
+            <a href="clientes.html" class="active">Clientes</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="pagos.html">Pagos</a>
+            <a href="seguimiento-admin.html">Seguimiento</a>
+            <a href="login-admin.html" class="logout">Cerrar sesión</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <div class="header-page">
+            <h1>Clientes</h1>
+            <button class="btn-exportar">⬇ Exportar CSV</button>
+        </div>
+
+        <div class="buscador">
+            <input type="text" placeholder="Buscar cliente por nombre o correo...">
+        </div>
+
+        <div class="tabla-container">
+            <table class="tabla-clientes">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Teléfono</th>
+                        <th>Pedidos</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>Ana Torres</td>
+                        <td>ana@example.com</td>
+                        <td>987 654 321</td>
+                        <td>5</td>
+                        <td><button class="btn-ver">Ver</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>#002</td>
+                        <td>Mario Ríos</td>
+                        <td>mario@example.com</td>
+                        <td>956 123 888</td>
+                        <td>3</td>
+                        <td><button class="btn-ver">Ver</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>#003</td>
+                        <td>Lucía Peña</td>
+                        <td>lucia@example.com</td>
+                        <td>912 441 009</td>
+                        <td>7</td>
+                        <td><button class="btn-ver">Ver</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+    <script src="js/clientes.js"></script>
+
+</body>
+</html>

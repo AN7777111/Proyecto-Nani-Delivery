@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagos - Admin</title>
+    <link rel="stylesheet" href="css/pagos.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="multimedia/img/logo.png" class="logo" alt="Logo">
+            <h3>Admin Panel</h3>
+        </div>
+
+        <nav class="menu">
+            <a href="dashboard-admin.html">Inicio</a>
+            <a href="perfil-admin.html">Perfil</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a class="active" href="pagos.html">Pagos</a>
+            <a href="seguimiento-admin.html">Seguimiento</a>
+            <a href="login-admin.html" class="logout">Cerrar sesión</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+        <h1>Gestión de Pagos</h1>
+        <p class="subtitle">Historial de pagos, facturación y estados financieros.</p>
+
+        <div class="actions">
+            <input type="text" placeholder="Buscar por cliente, monto o fecha…">
+            <select>
+                <option value="">Todos los estados</option>
+                <option value="pendiente">Pendiente</option>
+                <option value="pagado">Pagado</option>
+                <option value="fallido">Fallido</option>
+            </select>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID Pago</th>
+                        <th>Cliente</th>
+                        <th>Monto</th>
+                        <th>Método</th>
+                        <th>Fecha</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>#PAY001</td>
+                        <td>Juan Pérez</td>
+                        <td>S/ 35.00</td>
+                        <td>Yape</td>
+                        <td>28/11/2025</td>
+                        <td><span class="badge pagado">Pagado</span></td>
+                        <td><button class="btn-small">Ver</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>#PAY002</td>
+                        <td>Ana López</td>
+                        <td>S/ 50.00</td>
+                        <td>Plin</td>
+                        <td>27/11/2025</td>
+                        <td><span class="badge pendiente">Pendiente</span></td>
+                        <td><button class="btn-small">Ver</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>#PAY003</td>
+                        <td>Pedro García</td>
+                        <td>S/ 40.00</td>
+                        <td>Efectivo</td>
+                        <td>26/11/2025</td>
+                        <td><span class="badge fallido">Fallido</span></td>
+                        <td><button class="btn-small">Ver</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+    <script src="js/pagos.js"></script>
+
+</body>
+</html>

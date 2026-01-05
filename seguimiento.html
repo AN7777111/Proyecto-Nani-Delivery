@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento de Pedido - Nani Delivery</title>
+    <link rel="stylesheet" href="css/seguimiento.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <img src="multimedia/img/logo.png" alt="Logo" class="logo">
+
+            <div class="nav-buttons">
+                <a href="index.html" class="btn-full">Inicio</a>
+                <a href="login-cliente.html" class="btn-full">Login</a>
+                <a href="registrar-cliente.html" class="btn-full">Registrar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Seguimiento de Pedido</h1>
+            <p>Consulta el estado de tu envío en tiempo real con tu código de seguimiento.</p>
+
+            <form class="seguimiento-form">
+                <div class="input-group">
+                    <label for="codigo">Código de Pedido</label>
+                    <input type="text" id="codigo" placeholder="Ejemplo: NANI-2025-001">
+                </div>
+
+                <button type="submit" class="btn-full btn-large">Consultar</button>
+            </form>
+
+        </div>
+
+        <img src="multimedia/img/seguimiento-banner.jpg" class="hero-img" alt="Seguimiento">
+    </section>
+
+    <!-- RESULTADOS -->
+    <section class="section resultados">
+        <h2>Estado Actual</h2>
+
+        <div class="estado-card">
+            <h3>Sin consulta aún</h3>
+            <p>Ingresa un código arriba para mostrar el estado del pedido.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        © 2025 Nani Delivery — <a href="#">Términos y Condiciones</a>
+    </footer>
+    <script src="js/seguimiento.js"></script>
+
+</body>
+</html>

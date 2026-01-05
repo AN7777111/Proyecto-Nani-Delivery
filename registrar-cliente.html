@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Cliente - Nani Delivery</title>
+    <link rel="stylesheet" href="css/registrar-cliente.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-container">
+            <img src="multimedia/img/logo.png" alt="Nani Delivery" class="logo">
+
+            <div class="nav-buttons">
+                <a href="index.html" class="btn-full">Inicio</a>
+                <a href="login-cliente.html" class="btn-full">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- REGISTER FORM -->
+    <section class="register-section">
+        <div class="register-card">
+            <h2>Crear Cuenta</h2>
+            <p class="subtitle">Regístrate para comenzar a usar Nani Delivery</p>
+
+            <form class="register-form">
+
+                <div class="input-group">
+                    <label>Nombre Completo</label>
+                    <input type="text" placeholder="Ej: Juan Pérez" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Correo Electrónico</label>
+                    <input type="email" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Teléfono</label>
+                    <input type="text" placeholder="912 345 678" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Dirección</label>
+                    <input type="text" placeholder="Calle, número, urbanización" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Contraseña</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Confirmar Contraseña</label>
+                    <input type="password" placeholder="Repite tu contraseña" required>
+                </div>
+
+                <button type="submit" class="btn-full">Crear Cuenta</button>
+
+                <p class="login">
+                    ¿Ya tienes cuenta? <a href="login-cliente.html">Inicia sesión</a>
+                </p>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 Nani Delivery • Todos los derechos reservados</p>
+    </footer>
+    <script src="js/registrar-cliente.js"></script>
+
+</body>
+</html>

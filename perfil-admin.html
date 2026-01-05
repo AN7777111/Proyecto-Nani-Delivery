@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Administrador</title>
+    <link rel="stylesheet" href="css/perfil-admin.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="multimedia/img/logo.png" class="logo" alt="Logo">
+            <h3>Admin Panel</h3>
+        </div>
+
+        <nav class="menu">
+            <a href="dashboard-admin.html">Inicio</a>
+            <a href="perfil-admin.html" class="active">Perfil</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="pagos.html">Pagos</a>
+            <a href="seguimiento-admin.html">Seguimiento</a>
+            <a href="login-admin.html" class="logout">Cerrar sesión</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+        <h1>Perfil del Administrador</h1>
+        <p class="subtitle">Actualiza tu información personal y credenciales.</p>
+
+        <div class="profile-container">
+
+            <div class="profile-card">
+                <img src="multimedia/iconos/one-user.png" class="avatar" alt="Admin Avatar">
+                <h2>Nombre del Admin</h2>
+                <p class="rol">Administrador General</p>
+            </div>
+
+            <form class="profile-form">
+                <h3>Información Personal</h3>
+
+                <div class="input-group">
+                    <label>Nombre completo</label>
+                    <input type="text" placeholder="Escribe tu nombre">
+                </div>
+
+                <div class="input-group">
+                    <label>Correo electrónico</label>
+                    <input type="email" placeholder="correo@empresa.com">
+                </div>
+
+                <div class="input-group">
+                    <label>Teléfono</label>
+                    <input type="text" placeholder="000 000 000">
+                </div>
+
+                <h3>Seguridad</h3>
+
+                <div class="input-group">
+                    <label>Contraseña actual</label>
+                    <input type="password" placeholder="••••••••">
+                </div>
+
+                <div class="input-group">
+                    <label>Nueva contraseña</label>
+                    <input type="password" placeholder="••••••••">
+                </div>
+
+                <button type="submit" class="btn-guardar">Guardar cambios</button>
+            </form>
+
+        </div>
+
+    </main>
+    <script src="js/perfil-admin.js"></script>
+
+</body>
+</html>
